@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGray"
+    tools:context="com.todo.todoapp.login.view.LoginActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+         android:id="@+id/lay1_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        >
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="30dp"
+            android:background="@color/colorGray"
+            android:layout_marginBottom="30dp"
+            app:srcCompat="@drawable/loginimage" />
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/textviewmarquee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login "
+            android:textSize="30dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/shape_chips"
+            android:layout_marginBottom="20dp"
+            android:textAlignment="center"
+
+            />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colortext_back">
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/edittext_email"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:maxLines="1"
+
+            android:text="gokulsonawane9@gmail.com"
+            />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colortext_back"
+            android:layout_marginTop="10dp"
+            >
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/edittext_password"
+                android:layout_width="match_parent"
+                android:text="dipak123"
+                android:layout_height="match_parent"
+                android:maxLines="1"/>
+
+
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/button_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:background="@color/colorbutton_gray"
+            android:text="Login"
+            />
+    </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>
